@@ -1,18 +1,14 @@
 package com.beautypoint.app.cucumber.stepdefs
 
+import com.beautypoint.app.web.rest.UserResource
 import cucumber.api.java.Before
 import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
-
-import com.beautypoint.app.web.rest.UserResource
-
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.MediaType
 import org.springframework.test.web.servlet.MockMvc
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
-import org.springframework.test.web.servlet.result.MockMvcResultMatchers.content
-import org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath
-import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
+import org.springframework.test.web.servlet.result.MockMvcResultMatchers.*
 import org.springframework.test.web.servlet.setup.MockMvcBuilders
 
 class UserStepDefs : StepDefs() {
@@ -30,7 +26,7 @@ class UserStepDefs : StepDefs() {
     @When("I search user {string}")
     fun i_search_user(userId: String) {
         actions = restUserMockMvc.perform(get("/api/users/$userId")
-                .accept(MediaType.APPLICATION_JSON))
+            .accept(MediaType.APPLICATION_JSON))
     }
 
     @Then("the user is found")

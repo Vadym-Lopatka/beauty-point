@@ -2,8 +2,7 @@ package com.beautypoint.app.security
 
 import org.springframework.security.core.context.SecurityContextHolder
 import org.springframework.security.core.userdetails.UserDetails
-
-import java.util.Optional
+import java.util.*
 
 /**
  * Utility class for Spring Security.
@@ -52,7 +51,7 @@ object SecurityUtils {
         val securityContext = SecurityContextHolder.getContext()
         return Optional.ofNullable(securityContext.authentication)
             .map { authentication ->
-                    authentication.authorities.none { it.authority == AuthoritiesConstants.ANONYMOUS }
+                authentication.authorities.none { it.authority == AuthoritiesConstants.ANONYMOUS }
             }
             .orElse(false)
     }

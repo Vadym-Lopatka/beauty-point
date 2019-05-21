@@ -1,0 +1,25 @@
+{
+  "beautyPointApp": {
+    "master": {
+      "home": {
+        "title": "Masters",
+        "createLabel": "Создать новый Master",
+        "createOrEditLabel": "Создать или отредактировать Master",
+        "search": "Найти Master"
+      },
+      "created": "Новый Master создан с идентификатором {{ param }}",
+      "updated": "Master обновлен с идентификатором {{ param }}",
+      "deleted": "Master удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Master {{ id }}?"
+      },
+      "detail": {
+        "title": "Master"
+      },
+      "salon": "Salon",
+      "record": "Record",
+      "category": "Category",
+      "user": "User"
+    }
+  }
+}

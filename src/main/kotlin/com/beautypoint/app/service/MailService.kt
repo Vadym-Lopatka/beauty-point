@@ -1,12 +1,7 @@
 package com.beautypoint.app.service
 
 import com.beautypoint.app.domain.User
-
 import io.github.jhipster.config.JHipsterProperties
-
-import java.nio.charset.StandardCharsets
-import java.util.Locale
-
 import org.slf4j.LoggerFactory
 import org.springframework.context.MessageSource
 import org.springframework.mail.javamail.JavaMailSender
@@ -15,6 +10,8 @@ import org.springframework.scheduling.annotation.Async
 import org.springframework.stereotype.Service
 import org.thymeleaf.context.Context
 import org.thymeleaf.spring5.SpringTemplateEngine
+import java.nio.charset.StandardCharsets
+import java.util.*
 
 /**
  * Service for sending emails.

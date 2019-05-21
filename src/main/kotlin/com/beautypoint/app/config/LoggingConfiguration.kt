@@ -1,9 +1,5 @@
 package com.beautypoint.app.config
 
-import java.net.InetSocketAddress
-
-import io.github.jhipster.config.JHipsterProperties
-
 import ch.qos.logback.classic.AsyncAppender
 import ch.qos.logback.classic.Level
 import ch.qos.logback.classic.LoggerContext
@@ -14,19 +10,11 @@ import ch.qos.logback.core.ConsoleAppender
 import ch.qos.logback.core.filter.EvaluatorFilter
 import ch.qos.logback.core.spi.ContextAwareBase
 import ch.qos.logback.core.spi.FilterReply
+import io.github.jhipster.config.JHipsterProperties
 import net.logstash.logback.appender.LogstashTcpSocketAppender
 import net.logstash.logback.composite.ContextJsonProvider
 import net.logstash.logback.composite.GlobalCustomFieldsJsonProvider
-import net.logstash.logback.composite.loggingevent.ArgumentsJsonProvider
-import net.logstash.logback.composite.loggingevent.LogLevelJsonProvider
-import net.logstash.logback.composite.loggingevent.LoggerNameJsonProvider
-import net.logstash.logback.composite.loggingevent.LoggingEventFormattedTimestampJsonProvider
-import net.logstash.logback.composite.loggingevent.LoggingEventJsonProviders
-import net.logstash.logback.composite.loggingevent.LoggingEventPatternJsonProvider
-import net.logstash.logback.composite.loggingevent.MdcJsonProvider
-import net.logstash.logback.composite.loggingevent.MessageJsonProvider
-import net.logstash.logback.composite.loggingevent.StackTraceJsonProvider
-import net.logstash.logback.composite.loggingevent.ThreadNameJsonProvider
+import net.logstash.logback.composite.loggingevent.*
 import net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder
 import net.logstash.logback.encoder.LogstashEncoder
 import net.logstash.logback.stacktrace.ShortenedThrowableConverter
@@ -34,6 +22,7 @@ import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.cloud.context.config.annotation.RefreshScope
 import org.springframework.context.annotation.Configuration
+import java.net.InetSocketAddress
 
 @Configuration
 @RefreshScope

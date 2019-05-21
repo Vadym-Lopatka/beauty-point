@@ -1,0 +1,89 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [
+        {
+            "relationshipName": "salon",
+            "otherEntityName": "salon",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "image",
+            "otherEntityName": "image",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "variant",
+            "otherEntityName": "variant",
+            "otherEntityRelationshipName": "offer"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "option",
+            "otherEntityName": "option",
+            "otherEntityRelationshipName": "offer"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "category",
+            "otherEntityName": "category",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "priceLow",
+            "fieldType": "BigDecimal",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "priceHigh",
+            "fieldType": "BigDecimal",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "active",
+            "fieldType": "Boolean",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "OfferStatusEnum",
+            "fieldValues": "NORMAL, DELETED, BANNED",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20180411105123",
+    "dto": "no",
+    "service": "serviceClass",
+    "entityTableName": "offer",
+    "jpaMetamodelFiltering": true,
+    "databaseType": "sql",
+    "pagination": "infinite-scroll",
+    "searchEngine": "elasticsearch"
+}

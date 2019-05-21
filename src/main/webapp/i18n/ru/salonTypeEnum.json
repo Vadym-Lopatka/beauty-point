@@ -1,0 +1,11 @@
+{
+  "beautyPointApp": {
+    "SalonTypeEnum": {
+      "null": "",
+      "STANDARD": "STANDARD",
+      "PART_TIME_CUSTOM": "PART_TIME_CUSTOM",
+      "FULL_TIME_CUSTOM": "FULL_TIME_CUSTOM",
+      "SECOND_WORK_CUSTOM": "SECOND_WORK_CUSTOM"
+    }
+  }
+}

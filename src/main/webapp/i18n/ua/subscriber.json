@@ -1,0 +1,23 @@
+{
+  "beautyPointApp": {
+    "subscriber": {
+      "home": {
+        "title": "Subscribers",
+        "createLabel": "Створити новий Subscriber",
+        "createOrEditLabel": "Створити чи редагувати Subscriber",
+        "search": "Знайти Subscriber"
+      },
+      "created": "Новий Subscriber створений з ідентифікатором {{ param }}",
+      "updated": "Subscriber оновлений з ідентифікатором {{ param }}",
+      "deleted": "Subscriber видалений з ідентифікатором {{ param }}",
+      "delete": {
+        "question": "Ви впевнені, що хочете видалити Subscriber {{ id }}?"
+      },
+      "detail": {
+        "title": "Subscriber"
+      },
+      "firsName": "Firs Name",
+      "email": "Email"
+    }
+  }
+}

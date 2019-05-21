@@ -3,19 +3,17 @@ package com.beautypoint.app.web.rest
 import com.fasterxml.jackson.annotation.JsonInclude
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule
+import org.assertj.core.api.Assertions.assertThat
 import org.hamcrest.Description
 import org.hamcrest.TypeSafeDiagnosingMatcher
 import org.springframework.format.datetime.standard.DateTimeFormatterRegistrar
 import org.springframework.format.support.DefaultFormattingConversionService
 import org.springframework.format.support.FormattingConversionService
 import org.springframework.http.MediaType
-import javax.persistence.EntityManager
-
 import java.io.IOException
 import java.time.ZonedDateTime
 import java.time.format.DateTimeParseException
-
-import org.assertj.core.api.Assertions.assertThat
+import javax.persistence.EntityManager
 
 /**
  * Utility class for testing REST controllers.

@@ -1,0 +1,10 @@
+{
+  "beautyPointApp": {
+    "OfferStatusEnum": {
+      "null": "",
+      "NORMAL": "NORMAL",
+      "DELETED": "DELETED",
+      "BANNED": "BANNED"
+    }
+  }
+}

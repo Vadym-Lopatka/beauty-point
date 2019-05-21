@@ -35,7 +35,11 @@
     "clientThemeVariant": "primary",
     "useSass": true,
     "clientPackageManager": "npm",
-    "testFrameworks": ["gatling", "cucumber", "protractor"],
+    "testFrameworks": [
+      "gatling",
+      "cucumber",
+      "protractor"
+    ],
     "jhiPrefix": "jhi",
     "entitySuffix": "",
     "dtoSuffix": "DTO",
@@ -47,7 +51,11 @@
     ],
     "enableTranslation": true,
     "nativeLanguage": "ua",
-    "languages": ["ua", "en", "ru"],
+    "languages": [
+      "ua",
+      "en",
+      "ru"
+    ],
     "blueprint": "generator-jhipster-kotlin",
     "blueprintVersion": "0.8.0"
   }

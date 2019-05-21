@@ -16,17 +16,15 @@ import org.springframework.core.env.Profiles
 import org.springframework.http.MediaType
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource
 import org.springframework.web.filter.CorsFilter
-
+import java.io.File
+import java.io.UnsupportedEncodingException
+import java.net.URLDecoder.decode
+import java.nio.charset.StandardCharsets
+import java.nio.file.Paths
+import java.util.*
 import javax.servlet.DispatcherType
 import javax.servlet.ServletContext
 import javax.servlet.ServletException
-import java.io.File
-import java.io.UnsupportedEncodingException
-import java.nio.charset.StandardCharsets
-import java.nio.file.Paths
-import java.util.EnumSet
-
-import java.net.URLDecoder.decode
 
 /**
  * Configuration of web application with Servlet 3.0 APIs.

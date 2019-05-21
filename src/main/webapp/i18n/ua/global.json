@@ -7,6 +7,16 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Сутності",
+        "category": "Category",
+        "image": "Image",
+        "master": "Master",
+        "offer": "Offer",
+        "option": "Option",
+        "record": "Record",
+        "salon": "Salon",
+        "subscriber": "Subscriber",
+        "timeTable": "Time Table",
+        "variant": "Variant",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

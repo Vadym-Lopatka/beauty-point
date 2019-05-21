@@ -3,8 +3,9 @@ package com.beautypoint.app.security
 import com.beautypoint.app.BeautyPointApp
 import com.beautypoint.app.domain.User
 import com.beautypoint.app.repository.UserRepository
-
 import org.apache.commons.lang3.RandomStringUtils
+import org.assertj.core.api.Assertions.assertThat
+import org.assertj.core.api.Assertions.assertThatExceptionOfType
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
@@ -12,11 +13,7 @@ import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.security.core.userdetails.UserDetailsService
 import org.springframework.security.core.userdetails.UsernameNotFoundException
 import org.springframework.transaction.annotation.Transactional
-
-import java.util.Locale
-
-import org.assertj.core.api.Assertions.assertThat
-import org.assertj.core.api.Assertions.assertThatExceptionOfType
+import java.util.*
 
 /**
  * Integration tests for [DomainUserDetailsService].

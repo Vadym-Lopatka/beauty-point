@@ -1,0 +1,29 @@
+{
+  "beautyPointApp": {
+    "timeTable": {
+      "home": {
+        "title": "Time Tables",
+        "createLabel": "Створити новий Time Table",
+        "createOrEditLabel": "Створити чи редагувати Time Table",
+        "search": "Знайти Time Table"
+      },
+      "created": "Новий Time Table створений з ідентифікатором {{ param }}",
+      "updated": "Time Table оновлений з ідентифікатором {{ param }}",
+      "deleted": "Time Table видалений з ідентифікатором {{ param }}",
+      "delete": {
+        "question": "Ви впевнені, що хочете видалити Time Table {{ id }}?"
+      },
+      "detail": {
+        "title": "Time Table"
+      },
+      "everyDayEqual": "Every Day Equal",
+      "mo": "Mo",
+      "tu": "Tu",
+      "we": "We",
+      "th": "Th",
+      "fr": "Fr",
+      "sa": "Sa",
+      "su": "Su"
+    }
+  }
+}

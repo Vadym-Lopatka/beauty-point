@@ -1,18 +1,16 @@
 package com.beautypoint.app.service
 
-import com.beautypoint.app.config.Constants
-
 import com.beautypoint.app.BeautyPointApp
+import com.beautypoint.app.config.Constants
 import com.beautypoint.app.domain.User
 import io.github.jhipster.config.JHipsterProperties
+import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.mockito.ArgumentCaptor
 import org.mockito.ArgumentMatchers.any
 import org.mockito.Captor
-import org.mockito.Mockito.doNothing
-import org.mockito.Mockito.doThrow
-import org.mockito.Mockito.verify
+import org.mockito.Mockito.*
 import org.mockito.MockitoAnnotations
 import org.mockito.Spy
 import org.springframework.beans.factory.annotation.Autowired
@@ -21,14 +19,11 @@ import org.springframework.context.MessageSource
 import org.springframework.mail.MailSendException
 import org.springframework.mail.javamail.JavaMailSenderImpl
 import org.thymeleaf.spring5.SpringTemplateEngine
-
+import java.io.ByteArrayOutputStream
 import javax.mail.Multipart
 import javax.mail.internet.MimeBodyPart
 import javax.mail.internet.MimeMessage
 import javax.mail.internet.MimeMultipart
-import java.io.ByteArrayOutputStream
-
-import org.assertj.core.api.Assertions.assertThat
 
 /**
  * Integration tests for [MailService].

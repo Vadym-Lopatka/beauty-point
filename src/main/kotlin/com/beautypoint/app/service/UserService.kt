@@ -13,7 +13,6 @@ import com.beautypoint.app.service.util.RandomUtil
 import com.beautypoint.app.web.rest.errors.EmailAlreadyUsedException
 import com.beautypoint.app.web.rest.errors.InvalidPasswordException
 import com.beautypoint.app.web.rest.errors.LoginAlreadyUsedException
-
 import org.slf4j.LoggerFactory
 import org.springframework.cache.CacheManager
 import org.springframework.data.domain.Page
@@ -22,10 +21,9 @@ import org.springframework.scheduling.annotation.Scheduled
 import org.springframework.security.crypto.password.PasswordEncoder
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
-
 import java.time.Instant
 import java.time.temporal.ChronoUnit
-import java.util.Optional
+import java.util.*
 
 /**
  * Service class for managing users.

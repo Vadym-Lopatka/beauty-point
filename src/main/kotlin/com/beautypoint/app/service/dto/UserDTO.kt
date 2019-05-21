@@ -2,13 +2,11 @@ package com.beautypoint.app.service.dto
 
 import com.beautypoint.app.config.Constants
 import com.beautypoint.app.domain.User
-
+import java.time.Instant
 import javax.validation.constraints.Email
 import javax.validation.constraints.NotBlank
 import javax.validation.constraints.Pattern
 import javax.validation.constraints.Size
-
-import java.time.Instant
 
 /**
  * A DTO representing a user, with his authorities.

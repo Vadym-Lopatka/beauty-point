@@ -1,0 +1,32 @@
+{
+  "beautyPointApp": {
+    "offer": {
+      "home": {
+        "title": "Offers",
+        "createLabel": "Создать новый Offer",
+        "createOrEditLabel": "Создать или отредактировать Offer",
+        "search": "Найти Offer"
+      },
+      "created": "Новый Offer создан с идентификатором {{ param }}",
+      "updated": "Offer обновлен с идентификатором {{ param }}",
+      "deleted": "Offer удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Offer {{ id }}?"
+      },
+      "detail": {
+        "title": "Offer"
+      },
+      "name": "Name",
+      "description": "Description",
+      "priceLow": "Price Low",
+      "priceHigh": "Price High",
+      "active": "Active",
+      "status": "Status",
+      "salon": "Salon",
+      "image": "Image",
+      "variant": "Variant",
+      "option": "Option",
+      "category": "Category"
+    }
+  }
+}

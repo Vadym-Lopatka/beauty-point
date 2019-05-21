@@ -1,0 +1,31 @@
+{
+  "beautyPointApp": {
+    "record": {
+      "home": {
+        "title": "Records",
+        "createLabel": "Create a new Record",
+        "createOrEditLabel": "Create or edit a Record",
+        "search": "Search for Record"
+      },
+      "created": "A new Record is created with identifier {{ param }}",
+      "updated": "A Record is updated with identifier {{ param }}",
+      "deleted": "A Record is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Record {{ id }}?"
+      },
+      "detail": {
+        "title": "Record"
+      },
+      "bookingTime": "Booking Time",
+      "duration": "Duration",
+      "totalPrice": "Total Price",
+      "orderStatus": "Order Status",
+      "comment": "Comment",
+      "master": "Master",
+      "variant": "Variant",
+      "option": "Option",
+      "user": "User",
+      "salon": "Salon"
+    }
+  }
+}

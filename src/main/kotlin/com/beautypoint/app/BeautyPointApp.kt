@@ -2,18 +2,15 @@ package com.beautypoint.app
 
 import com.beautypoint.app.config.ApplicationProperties
 import com.beautypoint.app.config.DefaultProfileUtil
-
 import io.github.jhipster.config.JHipsterConstants
-
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.InitializingBean
-import org.springframework.boot.runApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties
 import org.springframework.boot.context.properties.EnableConfigurationProperties
+import org.springframework.boot.runApplication
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient
 import org.springframework.core.env.Environment
-
 import java.net.InetAddress
 import java.net.UnknownHostException
 

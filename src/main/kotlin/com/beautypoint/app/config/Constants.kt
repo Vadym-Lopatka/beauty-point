@@ -10,4 +10,4 @@ object Constants {
     const val SYSTEM_ACCOUNT: String = "system"
     const val ANONYMOUS_USER: String = "anonymoususer"
     const val DEFAULT_LANGUAGE: String = "ua"
-    }
+}

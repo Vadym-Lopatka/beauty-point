@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity Variant.
+    -->
+    <changeSet id="20180411105128-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="offer_id"
+                                 baseTableName="variant"
+                                 constraintName="fk_variant_offer_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="offer"/>
+
+        <addForeignKeyConstraint baseColumnNames="variant_id"
+                                 baseTableName="variant_executor"
+                                 constraintName="fk_variant_executor_variant_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="variant"/>
+
+        <addForeignKeyConstraint baseColumnNames="executor_id"
+                                 baseTableName="variant_executor"
+                                 constraintName="fk_variant_executor_executor_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="master"/>
+        
+    </changeSet>
+</databaseChangeLog>

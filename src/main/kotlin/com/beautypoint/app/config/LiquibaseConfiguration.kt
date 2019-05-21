@@ -11,9 +11,8 @@ import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.core.env.Environment
 import org.springframework.core.env.Profiles
-
-import javax.sql.DataSource
 import java.util.concurrent.Executor
+import javax.sql.DataSource
 
 @Configuration
 class LiquibaseConfiguration(private val env: Environment, private val cacheManager: CacheManager) {

@@ -4,6 +4,7 @@ import com.beautypoint.app.BeautyPointApp
 import com.beautypoint.app.config.Constants
 import com.beautypoint.app.config.audit.AuditEventConverter
 import com.beautypoint.app.domain.PersistentAuditEvent
+import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
@@ -13,11 +14,8 @@ import org.springframework.mock.web.MockHttpServletRequest
 import org.springframework.mock.web.MockHttpSession
 import org.springframework.security.web.authentication.WebAuthenticationDetails
 import org.springframework.transaction.annotation.Transactional
-
 import java.time.Instant
 import java.time.temporal.ChronoUnit
-
-import org.assertj.core.api.Assertions.assertThat
 
 /**
  * Integration tests for [CustomAuditEventRepository].

@@ -1,0 +1,101 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "image",
+            "otherEntityName": "image",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "salon"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "timeTable",
+            "otherEntityName": "timeTable",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "salon"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "offer",
+            "otherEntityName": "offer",
+            "otherEntityRelationshipName": "salon"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "master",
+            "otherEntityName": "master",
+            "otherEntityRelationshipName": "salon"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityRelationshipName": "salon",
+            "relationshipName": "category",
+            "otherEntityName": "category",
+            "otherEntityField": "name",
+            "ownerSide": true
+        },
+        {
+            "relationshipName": "owner",
+            "otherEntityName": "user",
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": [
+                "required"
+            ],
+            "otherEntityField": "login",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "image"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "slogan",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "location",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "SalonStatusEnum",
+            "fieldValues": "EXAMPLE, DRAFT,CREATED,ACTIVATED,DEACTIVATED,DELETED,BANNED",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "systemComment",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "SalonTypeEnum",
+            "fieldValues": "STANDARD,PART_TIME_CUSTOM,FULL_TIME_CUSTOM,SECOND_WORK_CUSTOM",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20180411105126",
+    "dto": "no",
+    "service": "serviceClass",
+    "entityTableName": "salon",
+    "jpaMetamodelFiltering": true,
+    "databaseType": "sql",
+    "pagination": "infinite-scroll",
+    "searchEngine": "elasticsearch"
+}

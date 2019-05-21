@@ -1,0 +1,50 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "parent",
+            "otherEntityName": "category",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "relationshipName": "salon",
+            "otherEntityName": "salon",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "category"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "relationshipName": "master",
+            "otherEntityName": "master",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "category"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "main",
+            "fieldType": "Boolean",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20180411105129",
+    "dto": "no",
+    "service": "serviceClass",
+    "entityTableName": "category",
+    "jpaMetamodelFiltering": true,
+    "databaseType": "sql",
+    "pagination": "infinite-scroll",
+    "searchEngine": "elasticsearch"
+}

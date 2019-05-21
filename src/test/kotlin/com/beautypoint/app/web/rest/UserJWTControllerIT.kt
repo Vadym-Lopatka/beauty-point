@@ -6,6 +6,7 @@ import com.beautypoint.app.repository.UserRepository
 import com.beautypoint.app.security.jwt.TokenProvider
 import com.beautypoint.app.web.rest.errors.ExceptionTranslator
 import com.beautypoint.app.web.rest.vm.LoginVM
+import org.hamcrest.Matchers.*
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
@@ -13,16 +14,10 @@ import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder
 import org.springframework.security.crypto.password.PasswordEncoder
 import org.springframework.test.web.servlet.MockMvc
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post
+import org.springframework.test.web.servlet.result.MockMvcResultMatchers.*
 import org.springframework.test.web.servlet.setup.MockMvcBuilders
 import org.springframework.transaction.annotation.Transactional
-
-import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post
-import org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath
-import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
-import org.springframework.test.web.servlet.result.MockMvcResultMatchers.header
-import org.hamcrest.Matchers.nullValue
-import org.hamcrest.Matchers.isEmptyString
-import org.hamcrest.Matchers.not
 
 /**
  * Integration tests for the [UserJWTController] REST controller.

@@ -10,8 +10,7 @@ import org.springframework.security.core.userdetails.UserDetailsService
 import org.springframework.security.core.userdetails.UsernameNotFoundException
 import org.springframework.stereotype.Component
 import org.springframework.transaction.annotation.Transactional
-
-import java.util.Locale
+import java.util.*
 
 /**
  * Authenticate a user from the database.

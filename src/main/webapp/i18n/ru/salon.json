@@ -1,0 +1,33 @@
+{
+  "beautyPointApp": {
+    "salon": {
+      "home": {
+        "title": "Salons",
+        "createLabel": "Создать новый Salon",
+        "createOrEditLabel": "Создать или отредактировать Salon",
+        "search": "Найти Salon"
+      },
+      "created": "Новый Salon создан с идентификатором {{ param }}",
+      "updated": "Salon обновлен с идентификатором {{ param }}",
+      "deleted": "Salon удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Salon {{ id }}?"
+      },
+      "detail": {
+        "title": "Salon"
+      },
+      "name": "Name",
+      "slogan": "Slogan",
+      "location": "Location",
+      "status": "Status",
+      "systemComment": "System Comment",
+      "type": "Type",
+      "image": "Image",
+      "timeTable": "Time Table",
+      "offer": "Offer",
+      "master": "Master",
+      "category": "Category",
+      "owner": "Owner"
+    }
+  }
+}

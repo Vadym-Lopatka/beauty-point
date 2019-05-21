@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity Salon.
+    -->
+    <changeSet id="20180411105126-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="image_id"
+                                 baseTableName="salon"
+                                 constraintName="fk_salon_image_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="image"/>
+
+        <addForeignKeyConstraint baseColumnNames="time_table_id"
+                                 baseTableName="salon"
+                                 constraintName="fk_salon_time_table_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="time_table"/>
+
+        <addForeignKeyConstraint baseColumnNames="salon_id"
+                                 baseTableName="salon_category"
+                                 constraintName="fk_salon_category_salon_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="salon"/>
+
+        <addForeignKeyConstraint baseColumnNames="category_id"
+                                 baseTableName="salon_category"
+                                 constraintName="fk_salon_category_category_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="category"/>
+        
+        <addForeignKeyConstraint baseColumnNames="owner_id"
+                                 baseTableName="salon"
+                                 constraintName="fk_salon_owner_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+
+    </changeSet>
+</databaseChangeLog>

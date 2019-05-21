@@ -1,0 +1,91 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [
+        {
+            "relationshipName": "master",
+            "otherEntityName": "master",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "variant",
+            "otherEntityName": "variant",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityRelationshipName": "",
+            "relationshipName": "option",
+            "otherEntityName": "option",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipName": "user",
+            "otherEntityName": "user",
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": [
+                "required"
+            ],
+            "otherEntityField": "login",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "record"
+        },
+        {
+            "relationshipName": "salon",
+            "otherEntityName": "salon",
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": [
+                "required"
+            ],
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "record"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "bookingTime",
+            "fieldType": "Instant",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "duration",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "totalPrice",
+            "fieldType": "BigDecimal",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "orderStatus",
+            "fieldType": "OrderStatusEnum",
+            "fieldValues": "CREATED_BY_SALON, CREATED_BY_CLIENT, INFORMED,PENDING,IN_PROGRESS,DONE,CANCELED_BY_CLIENT,CANCELED_BY_SALON,PROBLEM",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "comment",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180411105125",
+    "dto": "no",
+    "service": "serviceClass",
+    "entityTableName": "record",
+    "jpaMetamodelFiltering": true,
+    "databaseType": "sql",
+    "pagination": "infinite-scroll",
+    "searchEngine": "elasticsearch"
+}

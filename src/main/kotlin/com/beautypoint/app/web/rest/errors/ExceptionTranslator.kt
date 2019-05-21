@@ -1,7 +1,6 @@
 package com.beautypoint.app.web.rest.errors
 
 import io.github.jhipster.web.util.HeaderUtil
-
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.dao.ConcurrencyFailureException
 import org.springframework.http.ResponseEntity
@@ -14,9 +13,8 @@ import org.zalando.problem.Problem
 import org.zalando.problem.Status
 import org.zalando.problem.spring.web.advice.ProblemHandling
 import org.zalando.problem.violations.ConstraintViolationProblem
-
+import java.util.*
 import javax.servlet.http.HttpServletRequest
-import java.util.NoSuchElementException
 
 /**
  * Controller advice to translate the server side exceptions to client-friendly json structures.

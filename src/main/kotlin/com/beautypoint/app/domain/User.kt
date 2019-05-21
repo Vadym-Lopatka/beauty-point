@@ -1,31 +1,19 @@
 package com.beautypoint.app.domain
 
 import com.beautypoint.app.config.Constants
-
 import com.fasterxml.jackson.annotation.JsonIgnore
 import org.hibernate.annotations.BatchSize
 import org.hibernate.annotations.Cache
 import org.hibernate.annotations.CacheConcurrencyStrategy
 import org.springframework.data.elasticsearch.annotations.FieldType
-
-import javax.persistence.Column
-import javax.persistence.Entity
-import javax.persistence.GeneratedValue
-import javax.persistence.GenerationType
-import javax.persistence.Id
-import javax.persistence.JoinColumn
-import javax.persistence.JoinTable
-import javax.persistence.ManyToMany
-import javax.persistence.SequenceGenerator
-import javax.persistence.Table
+import java.io.Serializable
+import java.time.Instant
+import java.util.*
+import javax.persistence.*
 import javax.validation.constraints.Email
 import javax.validation.constraints.NotNull
 import javax.validation.constraints.Pattern
 import javax.validation.constraints.Size
-import java.io.Serializable
-import java.time.Instant
-import java.util.Locale
-import java.util.Objects
 
 /**
  * A user.
@@ -109,10 +97,10 @@ class User @JvmOverloads constructor(
     @field:Size(min = 1, max = 50)
     @Column(length = 50, unique = true, nullable = false)
     var login: String? = login
-    set(value) {
-        // Lowercase the login before saving it in database
-        field = value?.toLowerCase(Locale.ENGLISH)
-    }
+        set(value) {
+            // Lowercase the login before saving it in database
+            field = value?.toLowerCase(Locale.ENGLISH)
+        }
 
     override fun equals(other: Any?): Boolean {
         if (this === other) return true

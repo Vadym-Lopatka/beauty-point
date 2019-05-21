@@ -1,0 +1,27 @@
+{
+  "beautyPointApp": {
+    "variant": {
+      "home": {
+        "title": "Variants",
+        "createLabel": "Create a new Variant",
+        "createOrEditLabel": "Create or edit a Variant",
+        "search": "Search for Variant"
+      },
+      "created": "A new Variant is created with identifier {{ param }}",
+      "updated": "A Variant is updated with identifier {{ param }}",
+      "deleted": "A Variant is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Variant {{ id }}?"
+      },
+      "detail": {
+        "title": "Variant"
+      },
+      "name": "Name",
+      "price": "Price",
+      "sessionTime": "Session Time",
+      "active": "Active",
+      "offer": "Offer",
+      "executor": "Executor"
+    }
+  }
+}

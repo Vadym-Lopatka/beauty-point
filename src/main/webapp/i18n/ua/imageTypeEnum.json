@@ -1,0 +1,13 @@
+{
+  "beautyPointApp": {
+    "ImageTypeEnum": {
+      "null": "",
+      "PROFILE": "PROFILE",
+      "SALON": "SALON",
+      "OFFER": "OFFER",
+      "VARIANT": "VARIANT",
+      "CATEGORY": "CATEGORY",
+      "SYSTEM": "SYSTEM"
+    }
+  }
+}

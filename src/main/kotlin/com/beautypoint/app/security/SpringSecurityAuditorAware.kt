@@ -1,11 +1,9 @@
 package com.beautypoint.app.security
 
 import com.beautypoint.app.config.Constants
-
-import java.util.Optional
-
 import org.springframework.data.domain.AuditorAware
 import org.springframework.stereotype.Component
+import java.util.*
 
 /**
  * Implementation of [AuditorAware] based on Spring Security.

@@ -1,0 +1,26 @@
+{
+  "beautyPointApp": {
+    "category": {
+      "home": {
+        "title": "Categories",
+        "createLabel": "Створити новий Category",
+        "createOrEditLabel": "Створити чи редагувати Category",
+        "search": "Знайти Category"
+      },
+      "created": "Новий Category створений з ідентифікатором {{ param }}",
+      "updated": "Category оновлений з ідентифікатором {{ param }}",
+      "deleted": "Category видалений з ідентифікатором {{ param }}",
+      "delete": {
+        "question": "Ви впевнені, що хочете видалити Category {{ id }}?"
+      },
+      "detail": {
+        "title": "Category"
+      },
+      "name": "Name",
+      "main": "Main",
+      "parent": "Parent",
+      "salon": "Salon",
+      "master": "Master"
+    }
+  }
+}

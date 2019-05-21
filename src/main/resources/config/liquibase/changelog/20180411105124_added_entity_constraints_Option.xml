@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity Option.
+    -->
+    <changeSet id="20180411105124-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="offer_id"
+                                 baseTableName="option"
+                                 constraintName="fk_option_offer_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="offer"/>
+
+    </changeSet>
+</databaseChangeLog>

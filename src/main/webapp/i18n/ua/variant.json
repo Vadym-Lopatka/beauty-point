@@ -1,0 +1,27 @@
+{
+  "beautyPointApp": {
+    "variant": {
+      "home": {
+        "title": "Variants",
+        "createLabel": "Створити новий Variant",
+        "createOrEditLabel": "Створити чи редагувати Variant",
+        "search": "Знайти Variant"
+      },
+      "created": "Новий Variant створений з ідентифікатором {{ param }}",
+      "updated": "Variant оновлений з ідентифікатором {{ param }}",
+      "deleted": "Variant видалений з ідентифікатором {{ param }}",
+      "delete": {
+        "question": "Ви впевнені, що хочете видалити Variant {{ id }}?"
+      },
+      "detail": {
+        "title": "Variant"
+      },
+      "name": "Name",
+      "price": "Price",
+      "sessionTime": "Session Time",
+      "active": "Active",
+      "offer": "Offer",
+      "executor": "Executor"
+    }
+  }
+}

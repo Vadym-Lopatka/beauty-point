@@ -1,0 +1,23 @@
+{
+  "beautyPointApp": {
+    "subscriber": {
+      "home": {
+        "title": "Subscribers",
+        "createLabel": "Create a new Subscriber",
+        "createOrEditLabel": "Create or edit a Subscriber",
+        "search": "Search for Subscriber"
+      },
+      "created": "A new Subscriber is created with identifier {{ param }}",
+      "updated": "A Subscriber is updated with identifier {{ param }}",
+      "deleted": "A Subscriber is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Subscriber {{ id }}?"
+      },
+      "detail": {
+        "title": "Subscriber"
+      },
+      "firsName": "Firs Name",
+      "email": "Email"
+    }
+  }
+}

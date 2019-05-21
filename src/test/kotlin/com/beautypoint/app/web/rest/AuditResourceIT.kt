@@ -4,8 +4,9 @@ import com.beautypoint.app.BeautyPointApp
 import com.beautypoint.app.config.audit.AuditEventConverter
 import com.beautypoint.app.domain.PersistentAuditEvent
 import com.beautypoint.app.repository.PersistenceAuditEventRepository
-
 import com.beautypoint.app.service.AuditEventService
+import org.assertj.core.api.AssertionsForClassTypes.assertThat
+import org.hamcrest.Matchers.hasItem
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.mockito.MockitoAnnotations
@@ -17,18 +18,11 @@ import org.springframework.format.support.FormattingConversionService
 import org.springframework.http.MediaType
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
 import org.springframework.test.web.servlet.MockMvc
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
+import org.springframework.test.web.servlet.result.MockMvcResultMatchers.*
 import org.springframework.test.web.servlet.setup.MockMvcBuilders
 import org.springframework.transaction.annotation.Transactional
-
 import java.time.Instant
-
-import org.assertj.core.api.AssertionsForClassTypes.assertThat
-import org.hamcrest.Matchers.hasItem
-import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
-import org.springframework.test.web.servlet.result.MockMvcResultMatchers.content
-import org.springframework.test.web.servlet.result.MockMvcResultMatchers.header
-import org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath
-import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 
 /**
  * Integration tests for the [AuditResource] REST controller.

@@ -1,4 +1,5 @@
 package com.beautypoint.app.web.rest
+
 import com.beautypoint.app.BeautyPointApp
 import com.beautypoint.app.config.Constants
 import com.beautypoint.app.domain.Authority
@@ -13,8 +14,11 @@ import com.beautypoint.app.service.dto.UserDTO
 import com.beautypoint.app.web.rest.errors.ExceptionTranslator
 import com.beautypoint.app.web.rest.vm.KeyAndPasswordVM
 import com.beautypoint.app.web.rest.vm.ManagedUserVM
+import com.nhaarman.mockitokotlin2.any
+import com.nhaarman.mockitokotlin2.doNothing
+import com.nhaarman.mockitokotlin2.whenever
 import org.apache.commons.lang3.RandomStringUtils
-
+import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.mockito.Mock
@@ -26,22 +30,13 @@ import org.springframework.http.converter.HttpMessageConverter
 import org.springframework.security.crypto.password.PasswordEncoder
 import org.springframework.security.test.context.support.WithMockUser
 import org.springframework.test.web.servlet.MockMvc
-import org.springframework.test.web.servlet.setup.MockMvcBuilders
-import org.springframework.transaction.annotation.Transactional
-
-import java.time.Instant
-import java.util.Optional
-
-import org.assertj.core.api.Assertions.assertThat
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post
-import org.springframework.test.web.servlet.result.MockMvcResultMatchers.content
-import org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath
-import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
-
-import com.nhaarman.mockitokotlin2.whenever
-import com.nhaarman.mockitokotlin2.doNothing
-import com.nhaarman.mockitokotlin2.any
+import org.springframework.test.web.servlet.result.MockMvcResultMatchers.*
+import org.springframework.test.web.servlet.setup.MockMvcBuilders
+import org.springframework.transaction.annotation.Transactional
+import java.time.Instant
+import java.util.*
 
 /**
  * Integrations tests for the [AccountResource] REST controller.

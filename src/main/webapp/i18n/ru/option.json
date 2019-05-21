@@ -1,0 +1,26 @@
+{
+  "beautyPointApp": {
+    "option": {
+      "home": {
+        "title": "Options",
+        "createLabel": "Создать новый Option",
+        "createOrEditLabel": "Создать или отредактировать Option",
+        "search": "Найти Option"
+      },
+      "created": "Новый Option создан с идентификатором {{ param }}",
+      "updated": "Option обновлен с идентификатором {{ param }}",
+      "deleted": "Option удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Option {{ id }}?"
+      },
+      "detail": {
+        "title": "Option"
+      },
+      "name": "Name",
+      "price": "Price",
+      "sessionTime": "Session Time",
+      "active": "Active",
+      "offer": "Offer"
+    }
+  }
+}

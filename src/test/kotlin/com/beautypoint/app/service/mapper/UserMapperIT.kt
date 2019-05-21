@@ -4,12 +4,11 @@ import com.beautypoint.app.BeautyPointApp
 import com.beautypoint.app.domain.User
 import com.beautypoint.app.service.dto.UserDTO
 import org.apache.commons.lang3.RandomStringUtils
+import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
-
-import org.assertj.core.api.Assertions.assertThat
 import kotlin.test.assertNotNull
 import kotlin.test.assertNull
 

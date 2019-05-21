@@ -1,0 +1,24 @@
+{
+  "beautyPointApp": {
+    "image": {
+      "home": {
+        "title": "Images",
+        "createLabel": "Создать новый Image",
+        "createOrEditLabel": "Создать или отредактировать Image",
+        "search": "Найти Image"
+      },
+      "created": "Новый Image создан с идентификатором {{ param }}",
+      "updated": "Image обновлен с идентификатором {{ param }}",
+      "deleted": "Image удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Image {{ id }}?"
+      },
+      "detail": {
+        "title": "Image"
+      },
+      "source": "Source",
+      "imageType": "Image Type",
+      "owner": "Owner"
+    }
+  }
+}

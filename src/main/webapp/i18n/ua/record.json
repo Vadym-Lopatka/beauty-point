@@ -1,0 +1,31 @@
+{
+  "beautyPointApp": {
+    "record": {
+      "home": {
+        "title": "Records",
+        "createLabel": "Створити новий Record",
+        "createOrEditLabel": "Створити чи редагувати Record",
+        "search": "Знайти Record"
+      },
+      "created": "Новий Record створений з ідентифікатором {{ param }}",
+      "updated": "Record оновлений з ідентифікатором {{ param }}",
+      "deleted": "Record видалений з ідентифікатором {{ param }}",
+      "delete": {
+        "question": "Ви впевнені, що хочете видалити Record {{ id }}?"
+      },
+      "detail": {
+        "title": "Record"
+      },
+      "bookingTime": "Booking Time",
+      "duration": "Duration",
+      "totalPrice": "Total Price",
+      "orderStatus": "Order Status",
+      "comment": "Comment",
+      "master": "Master",
+      "variant": "Variant",
+      "option": "Option",
+      "user": "User",
+      "salon": "Salon"
+    }
+  }
+}

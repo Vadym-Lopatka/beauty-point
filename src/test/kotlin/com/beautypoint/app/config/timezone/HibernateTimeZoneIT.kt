@@ -3,6 +3,7 @@ package com.beautypoint.app.config.timezone
 import com.beautypoint.app.BeautyPointApp
 import com.beautypoint.app.repository.timezone.DateTimeWrapper
 import com.beautypoint.app.repository.timezone.DateTimeWrapperRepository
+import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
@@ -10,20 +11,9 @@ import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.jdbc.core.JdbcTemplate
 import org.springframework.jdbc.support.rowset.SqlRowSet
 import org.springframework.transaction.annotation.Transactional
-
-import java.time.Instant
-import java.time.LocalDate
-import java.time.LocalDateTime
-import java.time.LocalTime
-import java.time.Month
-import java.time.OffsetDateTime
-import java.time.OffsetTime
-import java.time.ZoneId
-import java.time.ZonedDateTime
-import java.time.format.DateTimeFormatter
-
 import java.lang.String.format
-import org.assertj.core.api.Assertions.assertThat
+import java.time.*
+import java.time.format.DateTimeFormatter
 
 /**
  * Integration tests for the UTC Hibernate configuration.

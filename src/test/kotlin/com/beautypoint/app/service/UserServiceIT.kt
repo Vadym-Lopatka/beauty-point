@@ -3,31 +3,26 @@ package com.beautypoint.app.service
 import com.beautypoint.app.BeautyPointApp
 import com.beautypoint.app.config.Constants
 import com.beautypoint.app.domain.User
-import com.beautypoint.app.repository.search.UserSearchRepository
 import com.beautypoint.app.repository.UserRepository
+import com.beautypoint.app.repository.search.UserSearchRepository
 import com.beautypoint.app.service.util.RandomUtil
-
 import org.apache.commons.lang3.RandomStringUtils
+import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.mockito.Mock
+import org.mockito.Mockito.*
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.data.auditing.AuditingHandler
 import org.springframework.data.auditing.DateTimeProvider
 import org.springframework.data.domain.PageRequest
 import org.springframework.transaction.annotation.Transactional
-
 import java.time.Instant
+import java.time.LocalDateTime
 import java.time.temporal.ChronoUnit
 import java.time.temporal.TemporalAccessor
-import java.time.LocalDateTime
-import java.util.Optional
-
-import org.assertj.core.api.Assertions.assertThat
-import org.mockito.Mockito.times
-import org.mockito.Mockito.verify
-import org.mockito.Mockito.`when`
+import java.util.*
 import kotlin.test.assertNotNull
 
 /**

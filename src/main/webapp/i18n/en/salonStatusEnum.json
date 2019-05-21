@@ -1,0 +1,14 @@
+{
+  "beautyPointApp": {
+    "SalonStatusEnum": {
+      "null": "",
+      "EXAMPLE": "EXAMPLE",
+      "DRAFT": "DRAFT",
+      "CREATED": "CREATED",
+      "ACTIVATED": "ACTIVATED",
+      "DEACTIVATED": "DEACTIVATED",
+      "DELETED": "DELETED",
+      "BANNED": "BANNED"
+    }
+  }
+}
