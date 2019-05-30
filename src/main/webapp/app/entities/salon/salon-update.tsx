@@ -267,7 +267,7 @@ export class SalonUpdate extends React.Component<ISalonUpdateProps, ISalonUpdate
                     type="select"
                     className="form-control"
                     name="owner.id"
-                    value={isNew ? users[0] && users[0].id : salonEntity.owner.id}
+                    value={isNew ? users[0] && users[0].id : salonEntity.owner}
                     required
                   >
                     {users
