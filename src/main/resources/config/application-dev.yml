@@ -51,7 +51,7 @@ spring:
     type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:postgresql://localhost:5432/beautyPoint
     username: beautyPoint
-    password:
+    password: beautyPoint
     hikari:
       poolName: Hikari
       auto-commit: false
